@@ -4,7 +4,6 @@
 
 #include "../include/Item_bathroom.h"
 #include "bn_array.h"
-#include "bn_random.h"
 #include "bn_log.h"
 #include "bn_sprite_items_bulle16.h"
 #include "bn_core.h"
@@ -32,9 +31,9 @@ bool Item_bathroom::is_expired() {
 }
 
 void Item_bathroom::update() {
-    if (_lifetime_timer.elapsed_ticks() > 5 * 60) {
-        _sprite.set_visible(false);
-    }
+
+
+
 }
 
 
@@ -44,6 +43,8 @@ void Item_bathroom::generate_item() {
     int random_number = r.get() % 5;
     int rand_x = r.get() % 240 - 120;
     int rand_y = r.get() % 160 - 80;
+    BN_LOG("x ", rand_x);
+    BN_LOG("y ", rand_y);
     _sprite = bn::sprite_items::bulle16.create_sprite(rand_x, rand_y);
 
 }
