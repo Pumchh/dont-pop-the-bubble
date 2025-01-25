@@ -11,7 +11,6 @@ class Background_game1 {
 
 public:
     Background_game1();
-    void set_coordinates(int x, int y);
 
 private:
     bn::regular_bg_ptr _background;
