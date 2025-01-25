@@ -3,41 +3,25 @@
 #include "Player.h"
 #include "bn_keypad.h"
 #include "bn_log.h"
+#include "Item_bathroom.h"
+#include "bn_timer.h"
+#include "bn_random.h"
+
 
 int main()
 {
     bn::core::init();
 
-    //int x = 0;
-    //int y = 0;
     Background_game1 background;
     Player player;
-    while(true)
-    {
-        if (bn::keypad::a_pressed()){
-            BN_LOG("Touche A appuyée !");
-        }
 
-        if (bn::keypad::b_pressed()){
-            BN_LOG("Touche B appuyée !");
-        }
+    Item_bathroom item1(20, 20);
+    Item_bathroom item2(-20, 40);
+    Item_bathroom item3(80, 20);
+    Item_bathroom item4(-20, -20);
 
-        if (bn::keypad::left_held()){
-            player.move_left();
-        }
-
-        if (bn::keypad::right_held()){
-            player.move_right();
-        }
-
-        if (bn::keypad::up_held()){
-            player.move_up();
-        }
-
-        if (bn::keypad::down_held()){
-            player.move_down();
-        }
-
+    while (true) {
+        player.update();
         bn::core::update();
     }
 }
