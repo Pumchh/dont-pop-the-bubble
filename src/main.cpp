@@ -6,19 +6,22 @@
 #include "Item_bathroom.h"
 #include "bn_timer.h"
 #include "bn_random.h"
+#include "Item_bathroom_manager.h"
 
 
 int main()
 {
     bn::core::init();
 
+
     Background_game1 background;
     Player player;
 
-    Item_bathroom item1(20, 20);
-    Item_bathroom item2(-20, 40);
-    Item_bathroom item3(80, 20);
-    Item_bathroom item4(-20, -20);
+    Item_bathroom item;
+    Item_bathroom item2;
+
+    item.generate_item();
+    item2.generate_item();
 
     while (true) {
         player.update();

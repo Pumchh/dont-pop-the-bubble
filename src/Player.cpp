@@ -12,7 +12,7 @@
 Player::Player():
         _sprite(bn::sprite_items::personnage_scene1.create_sprite(0, 0)),
         _action(bn::create_sprite_animate_action_forever(
-                _sprite, 8, bn::sprite_items::personnage_scene1.tiles_item(), 0, 1, 2))
+                _sprite, 6, bn::sprite_items::personnage_scene1.tiles_item(), 0, 1, 2))
 {
 }
 
@@ -77,7 +77,6 @@ void Player::update() {
 
     if (!bn::keypad::up_held() && !bn::keypad::left_held() && !bn::keypad::right_held() && !bn::keypad::down_held()){
         _action.reset();
-
     }
 
     _action.update();
