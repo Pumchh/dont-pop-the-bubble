@@ -2,7 +2,7 @@
 
 Game realised during the GlobalGameJam 2025 about the theme "Bubble".
 
-Our game was realised on Game Boy Advanced.
+A Gameboy Advance game developed using DevKit Pro and the Butano framework !
 
 ## Credits
 
