@@ -28,7 +28,8 @@ public:
     bn::sprite_ptr get_sprite(){return _sprite;}
     void update();
     bool is_expired();
-    void generate_item();
+    void generate_item(int seed);
+    void delete_item();
 
 };
 

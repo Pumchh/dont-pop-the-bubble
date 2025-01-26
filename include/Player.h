@@ -16,7 +16,7 @@ private:
     bn::sprite_ptr _sprite;
     bn::sprite_animate_action<3> _action;
     int _level = 1;
-    int _speed = 3;
+    int _speed = 2;
 
 public:
     Player();
@@ -26,7 +26,8 @@ public:
     void move_right(int speed);
     bn::fixed_t<12> get_x() {return _sprite.x();}
     bn::fixed_t<12> get_y() {return _sprite.y();}
-    void level_up(){_level++;};
+    void level_up(){_level++;}
+    int get_level(){return _level;}
     void update();
 
 };

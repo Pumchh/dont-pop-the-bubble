@@ -14,8 +14,11 @@ public:
 
 private:
     bn::regular_bg_ptr _background;
-    int _x = 0;
-    int _y = 0;
+
+public:
+
+
+
 
 };
 
