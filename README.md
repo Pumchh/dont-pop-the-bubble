@@ -6,7 +6,7 @@ Our game was realised on Game Boy Advanced.
 
 ## Credits
 
-Sound Designer : Gauvin Galice @PatLaMenace-jpg
-Graphist : Mahaut Galice @mahaut231
-Programmors : Bruno Galice @bgalice and Martial Fousset @Pumchh
+Sound Designer : [Gauvin Galice](https://github.com/PatLaMenace-jpg)
+Graphist : [Mahaut Galice](https://github.com/mahaut231)
+Programmors : [Bruno Galice](https://github.com/bgalice) and [Martial Fousset](https://github.com/Pumchh)
 
