@@ -1,6 +1,6 @@
 # dont-pop-the-bubble
 
-Game realised during the GlobalGameJam 2025 about the theme "Bubble".
+A GameBoy Advance game ! You have to collect bubbles before trying to save yours from disappearing or from being hit by a dangerous comb !
 
 A Gameboy Advance game developed using DevKit Pro and the Butano framework !
 
